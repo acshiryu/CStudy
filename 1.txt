@@ -1,0 +1,1 @@
+INSERT INTO choice (choice_title,choice_A,choice_B,choice_C,choice_D,choice_answer,choice_explain)   			values('以下对C程序的描述中正确的是','C程序总是从第一个定义的函数开始执行','C程序总是从最后一个定义的函数开始执行',' C程序总是从main()函数开始执行。',' C程序中的main()函数必须放在程序的开始部分','2','')
