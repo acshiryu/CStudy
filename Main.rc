@@ -1,0 +1,581 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Main.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "隶书", 0, 0, 0x1
+BEGIN
+END
+
+IDD_LOGIN_DIALOG DIALOG DISCARDABLE  0, 0, 176, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等级考试练习系统（用户登录）"
+FONT 10, "System"
+BEGIN
+    LTEXT           "准考证号",IDC_STATIC,34,21,34,12
+    LTEXT           "密码",IDC_STATIC,44,40,25,11
+    EDITTEXT        IDC_EXAMREGID,73,18,69,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PASSWORD,73,40,69,13,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登陆",IDOK,29,71,50,14
+    PUSHBUTTON      "注册/修改",ID_REG,96,71,50,14
+    CONTROL         "记住密码",IDC_REMBER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,37,59,42,8
+    CONTROL         "自动登录",IDC_AUTOLOGIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,59,42,8
+END
+
+IDD_REGISTER_DIALOG DIALOG DISCARDABLE  0, 0, 199, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等级考试练习系统--用户注册"
+FONT 10, "System"
+BEGIN
+    LTEXT           "准考证号",IDC_STATIC,46,18,34,11
+    LTEXT           "身份证号",IDC_STATIC,46,40,34,11
+    LTEXT           "密码",IDC_STATIC,54,60,25,11
+    LTEXT           "确认密码",IDC_STATIC,46,80,38,11
+    EDITTEXT        IDC_EXAMREGID,85,15,69,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CARDID,85,37,77,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PASSWORD,85,60,69,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORDCMP,85,80,69,13,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "注册账号",IDOK,33,101,50,14
+    PUSHBUTTON      "修改密码",IDB_CHANGE,115,101,50,14
+END
+
+IDD_SETIP_DIALOG DIALOG DISCARDABLE  0, 0, 187, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等级考试联系系统--设置数据库服务器IP"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,9,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,26,50,14
+    CONTROL         "IPAddress1",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,
+                    21,17,91,14
+END
+
+IDD_ADDTITLE_DIALOG DIALOG DISCARDABLE  0, 0, 303, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等级考试练习系统--新增题目（使用Ctrl+Enter换行）"
+FONT 10, "System"
+BEGIN
+    CTEXT           "新增题目（使用Ctrl+Enter换行）",IDC_STATIC,77,16,150,12
+    LTEXT           "题目",IDC_STATIC,20,43,25,14
+    LTEXT           "考点",IDC_STATIC,20,123,25,14
+    LTEXT           "解释",IDC_STATIC,20,172,25,14
+    CONTROL         "A",IDC_RADIOA,"Button",BS_AUTORADIOBUTTON | WS_GROUP,23,
+                    73,22,10
+    CONTROL         "B",IDC_RADIOB,"Button",BS_AUTORADIOBUTTON,175,73,22,10
+    CONTROL         "C",IDC_RADIOC,"Button",BS_AUTORADIOBUTTON,23,95,22,10
+    CONTROL         "D",IDC_RADIOD,"Button",BS_AUTORADIOBUTTON,175,95,22,10
+    EDITTEXT        IDC_EDIT_TITLE,49,34,238,34,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_A,49,70,86,16,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_B,201,70,86,16,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_C,49,92,86,16,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_D,201,92,86,16,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_EDIT_POINT,49,117,238,23,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_EXPLAIN,49,159,238,34,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "多个考点中间用空格、逗号、分号或换行隔开",IDC_STATIC,50,
+                    145,176,9
+    DEFPUSHBUTTON   "增加/修改",IDOK,88,200,50,14
+    PUSHBUTTON      "退出",IDCANCEL,165,199,50,14
+END
+
+IDD_EDIT_DIALOG DIALOG DISCARDABLE  0, 0, 187, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等级考试练习系统--选择题目"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,24,50,14
+    LTEXT           "题目编号",IDC_EXPLAIN,17,14,21,19
+    EDITTEXT        IDC_EDIT,47,15,79,15,ES_AUTOHSCROLL
+END
+
+IDD_ADDWA_DIALOG DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等级考试联系系统--加入错题库"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "更新/加入",IDOK,32,73,50,14
+    PUSHBUTTON      "取消",IDCANCEL,105,73,50,14
+    CTEXT           "错题说明",IDC_STATIC,57,11,74,8
+    EDITTEXT        IDC_EDIT_ADD,23,27,140,40,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+END
+
+IDD_POINT_DIALOG DIALOG DISCARDABLE  0, 0, 190, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等级考试练习系统--选择重点"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,133,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,133,24,50,14
+    LTEXT           "选择重点",IDC_STATIC,14,14,17,24
+    COMBOBOX        IDC_CPOINT,36,17,91,85,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_GROUP | 
+                    WS_TABSTOP
+END
+
+IDD_ADDOP_DIALOG DIALOG DISCARDABLE  0, 0, 327, 272
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等级考试练习系统--新增操作题"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "题目类型",IDC_STATIC,19,7,290,21
+    CONTROL         "程序填空题",IDC_RADIOTYPE1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,48,16,68,8
+    CONTROL         "程序修改题",IDC_IDC_RADIOTYPE2,"Button",
+                    BS_AUTORADIOBUTTON,130,16,71,8
+    CONTROL         "程序设计题",IDC_IDC_RADIOTYPE3,"Button",
+                    BS_AUTORADIOBUTTON,212,16,68,8
+    GROUPBOX        "题目",IDC_STATIC,20,29,141,56
+    EDITTEXT        IDE_TITLE,25,38,131,42,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    GROUPBOX        "C代码",IDC_STATIC,166,29,141,56
+    EDITTEXT        IDE_C,170,38,104,42,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "文件浏览",IDB_FILEC,280,39,23,35,BS_MULTILINE
+    GROUPBOX        "in文件",IDC_STATIC,20,86,141,56
+    EDITTEXT        IDE_IN,27,95,104,42,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "文件浏览",IDB_FILEIN,135,97,23,35,BS_MULTILINE
+    GROUPBOX        "out文件",IDC_STATIC,166,86,141,56
+    EDITTEXT        IDE_OUT,170,95,104,42,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "文件浏览",IDB_FILEOUT,280,97,23,35,BS_MULTILINE
+    GROUPBOX        "答案(多个答案间用$%$隔开)",IDC_STATIC,21,144,141,73
+    LTEXT           "第一空",IDC_STATIC,26,158,26,11
+    EDITTEXT        IDE_ANS1,57,156,98,15,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    LTEXT           "第二空",IDC_STATIC,26,178,26,11
+    EDITTEXT        IDE_ANS2,57,176,98,15,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    LTEXT           "第一空",IDC_STATIC,26,197,26,11
+    EDITTEXT        IDE_ANS3,57,195,98,15,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    GROUPBOX        "解释",IDC_STATIC,166,144,142,74
+    EDITTEXT        IDE_EXPLAIN,170,153,134,58,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    GROUPBOX        "考点",IDC_STATIC,21,221,287,27
+    EDITTEXT        IDE_POINT,29,230,271,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "更新/增加",IDOK,92,251,50,14
+    PUSHBUTTON      "退出",IDCANCEL,185,251,50,14
+END
+
+IDD_SUBMIT_DIALOG DIALOG DISCARDABLE  0, 0, 344, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等级考试练习系统--查看提交"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List4",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_GROUP | WS_TABSTOP,7,27,
+                    330,167
+    CTEXT           "Static",IDC_TITLE,93,6,158,21
+END
+
+IDD_OPANS_DIALOG DIALOG DISCARDABLE  0, 0, 307, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "等级考试练习系统--查看结果"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_OPANS,7,7,293,193,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Main Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Main\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Main.EXE\0"
+            VALUE "ProductName", "Main 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_LOGIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_REGISTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_SETIP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_ADDTITLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_EDIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_ADDWA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_POINT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_ADDOP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 265
+    END
+
+    IDD_SUBMIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 27
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_OPANS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MAINFRM             BITMAP  DISCARDABLE     "res\\Mainfrm\\MainFrm.bmp"
+IDB_MIN                 BITMAP  DISCARDABLE     "res\\Mainfrm\\Min.bmp"
+IDB_MINDOWN             BITMAP  DISCARDABLE     "res\\Mainfrm\\MinDown.bmp"
+IDB_CLOSE               BITMAP  DISCARDABLE     "res\\Mainfrm\\Close.bmp"
+IDB_CLOSEDOWN           BITMAP  DISCARDABLE     "res\\Mainfrm\\CloseDown.bmp"
+IDB_MAINMENU1           BITMAP  DISCARDABLE     "res\\Mainfrm\\MainMenu1.bmp"
+IDB_MAINMENU1DOWN       BITMAP  DISCARDABLE     "res\\Mainfrm\\MainMenu1DOWN.bmp"
+IDB_MAINMENU4DOWN       BITMAP  DISCARDABLE     "res\\Mainfrm\\MainMenu4DOWN.bmp"
+IDB_MAINMENU3           BITMAP  DISCARDABLE     "res\\Mainfrm\\MainMenu3.bmp"
+IDB_MAINMENU3DOWN       BITMAP  DISCARDABLE     "res\\Mainfrm\\MainMenu3DOWN.bmp"
+IDB_MAINMENU4           BITMAP  DISCARDABLE     "res\\Mainfrm\\MainMenu4.bmp"
+IDB_MAINMENU2DOWN       BITMAP  DISCARDABLE     "res\\Mainfrm\\MainMenu2DOWN.bmp"
+IDB_MAINMENU2           BITMAP  DISCARDABLE     "res\\Mainfrm\\MainMenu2.bmp"
+IDB_SONWRONGQUEDOWN     BITMAP  DISCARDABLE     "res\\Mainfrm\\SonWrongQueDown.bmp"
+IDB_SONCHOICE           BITMAP  DISCARDABLE     "res\\Mainfrm\\SonChoice.bmp"
+IDB_SONCHOICEDOWN       BITMAP  DISCARDABLE     "res\\Mainfrm\\SonChoiceDown.bmp"
+IDB_SONOPERATING        BITMAP  DISCARDABLE     "res\\Mainfrm\\SonOperating.bmp"
+IDB_SONOPERATINGDOWN    BITMAP  DISCARDABLE     "res\\Mainfrm\\SonOperatingDown.bmp"
+IDB_SONWRONGQUE         BITMAP  DISCARDABLE     "res\\Mainfrm\\SonWrongQue.bmp"
+IDB_SONEXAMDOWN         BITMAP  DISCARDABLE     "res\\Mainfrm\\SonExamDown.bmp"
+IDB_SONCONTINUE         BITMAP  DISCARDABLE     "res\\Mainfrm\\SonContinue.bmp"
+IDB_SONCONTINUEDOWN     BITMAP  DISCARDABLE     "res\\Mainfrm\\SonContinueDown.bmp"
+IDB_SONEXAM             BITMAP  DISCARDABLE     "res\\Mainfrm\\SonExam.bmp"
+IDB_SONCHECKDOWN        BITMAP  DISCARDABLE     "res\\Mainfrm\\SonCheckDown.bmp"
+IDB_SONCHECK            BITMAP  DISCARDABLE     "res\\Mainfrm\\SonCheck.bmp"
+IDB_SONADDDOWN          BITMAP  DISCARDABLE     "res\\Mainfrm\\SonAddDown.bmp"
+IDB_SONADD              BITMAP  DISCARDABLE     "res\\Mainfrm\\SonAdd.bmp"
+IDB_SONCONTACTDOWN      BITMAP  DISCARDABLE     "res\\Mainfrm\\SonContactDown.bmp"
+IDB_SONCONTACT          BITMAP  DISCARDABLE     "res\\Mainfrm\\SonContact.bmp"
+IDB_SONTHANKS           BITMAP  DISCARDABLE     "res\\Mainfrm\\SonThanks.bmp"
+IDB_SONTHANKSDOWN       BITMAP  DISCARDABLE     "res\\Mainfrm\\SonThanksDown.bmp"
+IDB_SONABOUT            BITMAP  DISCARDABLE     "res\\Mainfrm\\SonAbout.bmp"
+IDB_SONABOUTDOWN        BITMAP  DISCARDABLE     "res\\Mainfrm\\SonAboutDown.bmp"
+IDB_MAINFRM2            BITMAP  DISCARDABLE     "res\\Mainfrm\\MainFrm2.bmp"
+IDB_NEXTDLG             BITMAP  DISCARDABLE     "res\\Mainfrm\\NextDlg.bmp"
+IDB_NEXTDLGDOWN         BITMAP  DISCARDABLE     "res\\Mainfrm\\NextDlgDown.bmp"
+IDB_CHOICEANS           BITMAP  DISCARDABLE     "res\\Mainfrm\\ChoiceAnswer.bmp"
+IDB_CHOICEANSDOWN       BITMAP  DISCARDABLE     "res\\Mainfrm\\ChoiceAnswerDown.bmp"
+IDB_CHOICEANSYES        BITMAP  DISCARDABLE     "res\\Mainfrm\\ChoiceAnsYes.bmp"
+IDB_CHOICEANSNO         BITMAP  DISCARDABLE     "res\\Mainfrm\\ChoiceAnsNo.bmp"
+IDB_SONSETTINGDOWN      BITMAP  DISCARDABLE     "res\\Mainfrm\\SonSettingDown.bmp"
+IDB_SONSETTING          BITMAP  DISCARDABLE     "res\\Mainfrm\\SonSetting.bmp"
+IDB_NEWBUTTON           BITMAP  DISCARDABLE     "res\\Mainfrm\\NewButton.bmp"
+IDB_NEWBUTTONDOWN       BITMAP  DISCARDABLE     "res\\Mainfrm\\NewButtonDown.bmp"
+IDB_LOGO                BITMAP  DISCARDABLE     "res\\LOGO\\cslogo.bmp"
+IDB_LOGO2               BITMAP  DISCARDABLE     "res\\LOGO\\cslogo2.bmp"
+IDB_HDRUP               BITMAP  DISCARDABLE     "res\\mainfrm\\bitmap1.bmp"
+IDB_HDRDOWN             BITMAP  DISCARDABLE     "res\\mainfrm\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "res\\Cursor\\Hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDPNG_LOGO              PNG     DISCARDABLE     "res\\LOGO\\cslogo.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDBTN_MIN               "最小化窗口"
+    IDBTN_CLOSE             "关闭窗口"
+    IDBTN_MAINMENU1         "练习题库"
+    IDBTN_MAINMENU2         "模拟考试"
+    IDBTN_MAINMENU3         "管理"
+    IDBTN_MAINMENU4         "帮助"
+    IDS_MAINMENUTITLE       "主菜单名"
+    IDBTN_SONMENU           "子菜单"
+    IDSTR_CHOICE            "选择题单项训练\n    在选择题单项训练中，你可以对题库中所有的选择题内容进行顺序练习，你也可以根据考试的知识点进行分别练习。在练习过程中，你可以将难题，错题，常考题做上笔记并加入到错题库中。"
+    IDSTR_OPERATING         "操作题单项训练\n    在操作题单项训练中，你可以对题库中的所有操作题进行顺序练习，你也可以根据考试的知识点进行分别练习。在练习过程中，你可以将难题，错题，常考题做上笔记并加入到错题库中。"
+    IDSTR_WRONGQUE          "错题库\n    在错题库中，你可以回顾以往的错题，了解自己对知识点掌握情况，借助题目推荐功能，从而有针对性地进行练习，使错题“变废为宝”。"
+    IDSTR_EXAM              "开始考试\n    在开始考试中，将全流程模拟上机考试的操作步骤，按部就班地完成每一步的作答。但与真正考试不一样的地方时，你可以随时保存答题进度，并可在交卷后可以根据自己的需要查看本次考试的得分情况。"
+    IDSTR_CONTINUE          "继续考试\n    在继续考试中，您可以直接恢复最近一次保存的考试或从保存的数据文件中恢复一场考试。"
+    IDSTR_ADD               "增加题库\n    在增加题库中，你可以增加一道选择题或操作题(需管理员权限)。"
+    IDSTR_CHECK             "查看题库\n    在查看题库中，您可以查看题库中所有题目的提交情况，也可以修改题目(需管理员权限)。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDSTR_ABOUT             "等级考试练习系统\n1.能够自由进行选择题与程序题的训练\n2.管理员可以增加和修改题目，并可查看题目的提交情况\n3.错题库功能可以回顾以往做错的题\n4.题目推荐功能以动态链接库形式推出，能够自由选择推荐算法或自己设计推荐算法"
+    IDSTR_CONTACT           "QQ：\n710307139\n邮箱：\nhzl@mails.ccnu.edu.cn\n我的博客：\nhttp://acshiryu.com/"
+    IDSTR_THANKS            "鸣谢\n杨青老师的指导与帮助\n未来教育软件研发中心提供的图片素材\n众多牛人的博客"
+    IDBTN_SONMENU1          "子菜单1"
+    IDBTN_SONMENU2          "子菜单2"
+    IDBTN_SONMENU3          "子菜单3"
+    IDBTN_SONMENU4          "子菜单4"
+    IDBTN_SONMENU5          "子菜单5"
+    IDBTN_SONMENU6          "子菜单6"
+    IDS_EXPLAIN             "菜单说明"
+    IDBTN_NEXTDLG1          "下一个选择1"
+    IDBTN_NEXTDLG2          "下一个选择2"
+    IDSTR_SEQUENCE          "顺序训练"
+    IDSTR_POINT             "重点训练"
+    IDSTR_REVIEW            "查看错题"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDSTR_CHOICE2           "选择题单项训练"
+    IDSTR_OPERATING2        "操作题单项训练"
+    IDSTR_WRONGQUE2         "错题库"
+    IDSTR_EXAM2             "开始考试"
+    IDSTR_CONTINUE2         "继续考试"
+    IDSTR_ADD2              "增加题库"
+    IDSTR_CHECK2            "查看题库"
+    IDDT_QUETITLE           "问题题目"
+    IDBTN_CHOICEA           "A选项"
+    IDBTN_CHOICEB           "B选项"
+    IDBTN_CHOICEC           "C选项"
+    IDBTN_CHOICED           "D选项"
+    IDDT_CHOICEEXPLAIN      "选择题答案解析"
+    IDSTR_SETTING           "设置\n    你可以设置数据库服务器的IP地址或初始化程序"
+    IDBTN_NEWBUTTON1        "新按钮1"
+    IDBTN_NEWBUTTON2        "新按钮2"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDBTN_NEWBUTTON3        "新按钮3"
+    IDBTN_NEWBUTTON4        "新按钮4"
+    IDBTN_NEWBUTTON5        "新按钮5"
+    IDBTN_OPBUTTON1         "操作题界面按钮1"
+    IDBTN_OPBUTTON2         "操作题界面按钮2"
+    IDBTN_OPBUTTON3         "操作题界面按钮3"
+    IDBTN_OPBUTTON4         "操作题界面按钮4"
+    IDBTN_OPBUTTON5         "操作题界面按钮5"
+    IDBTN_OPBUTTON6         "操作题界面按钮6"
+    IDBTN_OPBUTTON7         "操作题界面按钮7"
+    IDBTN_OPBUTTON8         "操作题界面按钮8"
+    IDBTN_LOGO              "LOGO"
+    MSG_DLGINITOK           "对话框初始完成消息"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Main.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
